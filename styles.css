@@ -1,358 +1,340 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    font-family: 'Verdana', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: "Verdana", sans-serif;
 }
 
 /* Header Styles */
 header {
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    overflow: hidden; /* Ensure contents stay within header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366; /* Dark Blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden; /* Ensure contents stay within header */
 }
 
 .header-left {
-    position: absolute;
-    left: 20px;
-    top: 20px;
+  flex: 1;
+  text-align: center;
+  /* left: 20px;
+  top: 20px; */
 }
 
 .header-right {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    text-align: right;
+  flex: 1;
+  text-align: center;
 }
 
 .header-left a,
 .header-right a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    display: inline-block; /* Ensure links are properly aligned */
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block; /* Ensure links are properly aligned */
 }
 
 .header-left a:hover,
 .header-right a:hover {
-    color: #FFA500; /* Light Orange */
+  color: #ffa500; /* Light Orange */
 }
 
 header h1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .header-right p {
-    margin: 0;
-    padding: 0;
-    white-space: nowrap; /* Prevent text wrapping */
-    line-height: 1.5; /* Ensure line height is consistent */
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Prevent text wrapping */
+  line-height: 1.5; /* Ensure line height is consistent */
 }
 
 /* Video Animation Styles */
 #video-hero {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 #video-hero video {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Button Styles */
 button {
-    background-color: #FFA500; /* Light Orange */
-    color: white;
-    border: none;
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    border: 2px solid #FF8C00; /* Slightly thicker border */
+  background-color: #ffa500; /* Light Orange */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid #ff8c00; /* Slightly thicker border */
 }
 
 button:hover {
-    background-color: #FF8C00; /* Slightly darker orange on hover */
+  background-color: #ff8c00; /* Slightly darker orange on hover */
 }
 
 /* Redesigned Contact Form Styles */
 #contact {
-    background-color: #f4f4f4;
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 800px; /* Slightly wider for better design */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px; /* Slightly wider for better design */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #contact h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 #contact form {
-    display: flex;
-    flex-direction: column; /* Stack inputs vertically */
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
 }
 
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease-in-out;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    border-color: #FFA500; /* Light Orange */
-    outline: none;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #ffa500; /* Light Orange */
+  outline: none;
 }
 
 textarea {
-    resize: vertical;
-    height: 150px;
-    width: 100%;
+  resize: vertical;
+  height: 150px;
+  width: 100%;
 }
 
 button[type="submit"] {
-    background-color: #FFA500; /* Light Orange */
-    color: white;
-    border: none;
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    font-size: 16px;
-    border: 2px solid #FF8C00; /* Slightly thicker border */
-    align-self: center; /* Center the button */
-    width: 200px; /* Fixed width for button */
+  background-color: #ffa500; /* Light Orange */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
+  border: 2px solid #ff8c00; /* Slightly thicker border */
+  align-self: center; /* Center the button */
+  width: 200px; /* Fixed width for button */
 }
 
 button[type="submit"]:hover {
-    background-color: #FF8C00; /* Slightly darker orange on hover */
+  background-color: #ff8c00; /* Slightly darker orange on hover */
 }
-
 
 /* Carousel and Package Styles */
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .package {
-    flex: 1 0 33.333%; /* Ensure consistent size */
-    box-sizing: border-box;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    display: block; /* Maintain block display for consistency */
+  flex: 1 0 33.333%; /* Ensure consistent size */
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  display: block; /* Maintain block display for consistency */
 }
 
 .package img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-    border: 2px solid #ddd;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  border: 2px solid #ddd;
 }
 
 .package:hover img {
-    transform: scale(1.1); /* Zoom effect */
+  transform: scale(1.1); /* Zoom effect */
 }
 
 /* Updated arrow styles for correct placement */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    user-select: none;
-    background-color: #FFA500; /* Light Orange */
-    border-radius: 50%; /* Rounded corners */
-    transform: translateY(-50%); /* Center vertically */
-    z-index: 1; /* Ensure arrows are on top */
+.prev,
+.next {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  background-color: #ffa500; /* Light Orange */
+  border-radius: 50%; /* Rounded corners */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 1; /* Ensure arrows are on top */
 }
 
 .prev {
-    left: 10px; /* Adjust left position */
+  left: 10px; /* Adjust left position */
 }
 
 .next {
-    right: 10px; /* Adjust right position */
+  right: 10px; /* Adjust right position */
 }
 
 /* Stylish Paging Bullets */
 .dots {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .dot {
-    cursor: pointer;
-    height: 10px; /* Smaller size */
-    width: 10px; /* Smaller size */
-    margin: 0 5px; /* Adjust spacing between dots */
-    background-color: #bbb;
-    border-radius: 50%; /* Rounded dots */
-    display: inline-block;
-    transition: background-color 0.6s ease, transform 0.3s ease; /* Add smooth transition */
-    border: 2px solid #717171; /* Border for stylish look */
+  cursor: pointer;
+  height: 10px; /* Smaller size */
+  width: 10px; /* Smaller size */
+  margin: 0 5px; /* Adjust spacing between dots */
+  background-color: #bbb;
+  border-radius: 50%; /* Rounded dots */
+  display: inline-block;
+  transition: background-color 0.6s ease, transform 0.3s ease; /* Add smooth transition */
+  border: 2px solid #717171; /* Border for stylish look */
 }
 
 .dot:hover {
-    background-color: #FFA500; /* Light Orange on hover */
-    transform: scale(1.2); /* Slightly larger on hover */
+  background-color: #ffa500; /* Light Orange on hover */
+  transform: scale(1.2); /* Slightly larger on hover */
 }
 
 .active {
-    background-color: #FFA500; /* Active dot color */
-    border: 2px solid #FF8C00; /* Slightly thicker border for active dot */
-    transform: scale(1.2); /* Slightly larger active dot */
+  background-color: #ffa500; /* Active dot color */
+  border: 2px solid #ff8c00; /* Slightly thicker border for active dot */
+  transform: scale(1.2); /* Slightly larger active dot */
 }
 
-
-.active, .dot:hover {
-    background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #003366; /* Dark Blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 footer nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 footer nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 footer nav ul li a:hover {
-    color: #FFA500; /* Light Orange */
+  color: #ffa500; /* Light Orange */
 }
 
 /* Stylish Bullet Points */
 ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 20px; /* Ensure padding for custom bullets */
+  list-style: none; /* Remove default bullets */
+  padding-left: 20px; /* Ensure padding for custom bullets */
 }
 
 ul li {
-    position: relative;
-    padding-left: 20px; /* Space for custom bullets */
-    margin-bottom: 10px; /* Space between items */
+  position: relative;
+  padding-left: 20px; /* Space for custom bullets */
+  margin-bottom: 10px; /* Space between items */
 }
 
 ul li::before {
-    content: "\2022"; /* Bullet symbol */
-    color: #FFA500; /* Light Orange */
-    font-weight: bold;
-    font-size: 1em; /* Adjust size */
-    position: absolute;
-    left: 0;
-    top: -12px;
-    transform: translateY(50%); /* Center vertically */
+  content: "\2022"; /* Bullet symbol */
+  color: #ffa500; /* Light Orange */
+  font-weight: bold;
+  font-size: 1em; /* Adjust size */
+  position: absolute;
+  left: 0;
+  top: -12px;
+  transform: translateY(50%); /* Center vertically */
 }
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .package {
-        flex: 1 0 auto; /* Ensure consistent size on mobile */
-    }
+  .package {
+    flex-basis: 100%; /* Ensure consistent size on mobile */
+    flex-wrap: wrap;
+  }
 
-    .carousel-inner {
-        flex-wrap: wrap;
-    }
+  .carousel-inner {
+    flex-wrap: wrap;
+  }
 
-    .header-left, .header-right {
-        position: static;
-        text-align: center;
-        margin: 10px 0;
-        white-space: normal; /* Allow text wrapping on smaller screens */
-    }
+  header h1 {
+    margin-bottom: 10px;
+  }
 
-    header h1 {
-        margin-bottom: 10px;
-    }
-
-    .prev, .next {
-        width: 100%;
-        left: 0;
-        right: 0;
-        margin: 0;
-        padding: 10px;
-    }
-	
-
-    #contact {
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    #contact h2 {
-        font-size: 24px;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-        padding: 10px;
-    }
-
-    button[type="submit"] {
-        padding: 10px 15px;
-        width: 100%; /* Full width button on smaller screens */
-    }
-
+  .prev,
+  .next {
+    display: none;
+  }
 }
