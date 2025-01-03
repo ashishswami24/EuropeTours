@@ -46,7 +46,7 @@ function showSlides(n, carouselId) {
   if (window.innerWidth <= 768) {
     start = slideIndex - 1;
   }
-  let end = start + (window.innerWidth <= 768 ? 1 : 3);
+  let end = start + (window.innerWidth <= 768 ? slides.length : 3);
 
   for (i = start; i < end; i++) {
     if (slides[i]) {

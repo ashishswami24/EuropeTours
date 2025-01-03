@@ -183,7 +183,7 @@ button[type="submit"]:hover {
 }
 
 .package {
-  flex: 1 0 33.333%; /* Ensure consistent size */
+  flex: 0 0 33.333%; /* Ensure consistent size */
   box-sizing: border-box;
   padding: 15px;
   text-align: center;
@@ -336,5 +336,9 @@ ul li::before {
   .prev,
   .next {
     display: none;
+  }
+  
+  .dots {
+	display:none;
   }
 }
