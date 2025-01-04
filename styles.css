@@ -18,28 +18,27 @@ h6 {
 
 /* Header Styles */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003366; /* Dark Blue */
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  overflow: hidden; /* Ensure contents stay within header */
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden; /* Ensure contents stay within header */
 }
 
 .header-left {
-  flex: 1;
-  text-align: center;
-  /* left: 20px;
-  top: 20px; */
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 .header-right {
-  flex: 1;
-  text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: right;
 }
+
 
 .header-left a,
 .header-right a {
@@ -332,6 +331,13 @@ ul li::before {
   header h1 {
     margin-bottom: 10px;
   }
+  
+  .header-left, .header-right {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+        white-space: normal; /* Allow text wrapping on smaller screens */
+    }
 
   .prev,
   .next {
