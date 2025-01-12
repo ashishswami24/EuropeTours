@@ -89,4 +89,9 @@ window.onresize = function () {
       }
   });
 
+  function toggle() {
+    const details = document.getElementById('itinerary-details');
+    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+}
+
 

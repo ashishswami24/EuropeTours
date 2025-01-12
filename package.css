@@ -51,6 +51,12 @@ ul {
     padding: 0;
 }
 
+
+ul.bullet {
+    list-style: disc;
+    padding-left: 20px;
+}
+
 li {
     margin-bottom: 10px;
 }
