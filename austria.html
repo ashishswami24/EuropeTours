@@ -4,50 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austrian Jewels - Eurocursions</title>
-	<link rel="stylesheet" href="package.css">
+    <link rel="stylesheet" href="package.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        function toggle() {
+            const details = document.getElementById('itinerary-details');
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
 
-<header>
-    <h1>Austrian Jewels: Explore the Beauty of Austria</h1>
-    <p>Embark on a journey to discover the Austrian Jewels. Experience the charm of Vienna, the majestic Alps, and the rich culture of this enchanting destination.</p>
+<header class = "header-content">
+    <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
+    <div>
+        <h1>Austrian Jewels: Explore the Beauty of Austria</h1>
+        <p>Embark on a journey to discover the Austrian Jewels. Experience the charm of Vienna, the majestic Alps, and the rich culture of this enchanting destination.</p>
+    </div>
 </header>
 
+
+<div class="image-gallery"> <img src="images/austria.jpg" alt="Vienna"> <img src="images/austria.jpg" alt="Salzburg"> <img src="images/austria.jpg" alt="Innsbruck"> </div>
 <section>
-    <h2>Itinerary</h2>
     <ul>
-        <li><strong>Day 1:</strong> Arrive in Vienna, explore the city and Schonbrunn Palace.</li>
-        <li><strong>Day 2:</strong> Vienna city tour and visit to Belvedere Palace.</li>
-        <li><strong>Day 3:</strong> Travel to Salzburg, enjoy the Sound of Music tour.</li>
-        <li><strong>Day 4:</strong> Day trip to Kitzsteinhorn mountain.</li>
-        <li><strong>Day 5:</strong> Travel to Innsbruck, visit Swarovski Crystal World.</li>
-        <li><strong>Day 6:</strong> Explore Nordkette Mountain.</li>
-        <li><strong>Day 7:</strong> Return to Vienna, day at leisure.</li>
-        <li><strong>Day 8:</strong> Depart from Vienna.</li>
+        <li><strong>Destination Cities:</strong> Vienna, Salzburg, Innsbruck</li>
+        <li><strong>Starting Price:</strong> $1146 per person</li>
+        <li><strong>Validity:</strong> Valid for bookings until December 2025</li>
+        <li><strong>Notes:</strong> Prices may vary based on availability and travel dates.</li>
+        <li><strong>Duration:</strong> 8 Days / 7 Nights</li>
+        <li><strong>Contact for More Info:</strong> For more details, please contact us at info@eurocursions.com or call +1 234 567 890</li>
     </ul>
+</section>
+
+<section>
+    <h2>Itinerary <i id="toggle-icon" class="fas fa-chevron-down" onclick="toggle()"></i></h2>
+    <div id="itinerary-details" style="display: none;">
+        <ul>
+            <li>
+                <strong>Day 1:</strong> Arrive in Vienna, explore the city and Schonbrunn Palace.
+                <p>Start your journey in the beautiful city of Vienna. After checking into your hotel, explore the city and visit the majestic Schonbrunn Palace. Enjoy a leisurely evening in the city.</p>
+            </li>
+            <li>
+                <strong>Day 2:</strong> Vienna city tour and visit to Belvedere Palace.
+                <p>Join a guided city tour of Vienna and visit the famous Belvedere Palace. Enjoy the stunning architecture and beautiful gardens. Spend the afternoon exploring the city's cultural landmarks.</p>
+            </li>
+            <li>
+                <strong>Day 3:</strong> Travel to Salzburg, enjoy the Sound of Music tour.
+                <p>Travel to Salzburg, the birthplace of Mozart. Enjoy a "Sound of Music" tour and visit the iconic locations from the famous movie. Explore the charming streets and historic sites of Salzburg.</p>
+            </li>
+            <li>
+                <strong>Day 4:</strong> Day trip to Kitzsteinhorn mountain.
+                <p>Take a day trip to Kitzsteinhorn mountain and enjoy the breathtaking alpine scenery. Experience thrilling activities like skiing, snowboarding, or simply soak in the stunning views.</p>
+            </li>
+            <li>
+                <strong>Day 5:</strong> Travel to Innsbruck, visit Swarovski Crystal World.
+                <p>Travel to Innsbruck, a picturesque city surrounded by the Alps. Visit Swarovski Crystal World and be amazed by the dazzling crystal exhibits and installations. Spend the evening exploring Innsbruck's charming streets.</p>
+            </li>
+            <li>
+                <strong>Day 6:</strong> Explore Nordkette Mountain.
+                <p>Enjoy a full day exploring Nordkette Mountain. Take a cable car ride to the summit and soak in the panoramic views of the surrounding mountains and valleys. Experience outdoor activities like hiking or simply relax in the scenic surroundings.</p>
+            </li>
+            <li>
+                <strong>Day 7:</strong> Return to Vienna, day at leisure.
+                <p>Return to Vienna and spend the day at leisure. Explore any remaining attractions, indulge in local cuisine, or simply relax and reflect on your journey through Austria.</p>
+            </li>
+            <li>
+                <strong>Day 8:</strong> Depart from Vienna.
+                <p>It's time to say goodbye to Austria. Depart from Vienna with beautiful memories of your Austrian adventure.</p>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <section>
     <h2>Package Inclusions</h2>
+    <h3>Accommodation:</h3>
     <ul>
         <li>2 nights accommodation in Vienna with breakfast</li>
+        <li>3 nights accommodation in Salzburg with breakfast</li>
+        <li>2 nights accommodation in Innsbrunk with breakfast</li>
+    </ul>
+    
+    <h3>Transfers and Tours:</h3>
+    <ul>
         <li>Private transfer from Vienna airport to hotel</li>
         <li>Vienna city tour and Schonbrunn Palace visit</li>
-        <li>3 nights accommodation in Salzburg with breakfast</li>
         <li>Sound of Music tour</li>
         <li>Day trip to Kitzsteinhorn mountain</li>
-        <li>2 nights accommodation in Innsbrunk with breakfast</li>
+        <li>Private transfer from Innsbruck hotel to airport/station</li>
+    </ul>
+    
+    <h3>Other Inclusions:</h3>
+    <ul>
         <li>Swarovski Crystal World entrance</li>
         <li>Nordkette Mountain tour</li>
-        <li>Private transfer from Innsbruck hotel to airport/station</li>
         <li>3-day Austria Rail Pass in 2nd class</li>
     </ul>
-</section>
-
-<section>
-    <h2>Price</h2>
-    <p>Starting from: <strong>$1146</strong> per person</p>
 </section>
 
 <footer>

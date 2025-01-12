@@ -348,3 +348,28 @@ ul li::before {
 	display:none;
   }
 }
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 24px;
+  padding: 15px 20px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.back-to-top:hover {
+  background-color: darkorange;
+}
+
+/* Show button when page is scrolled down */
+body.scrolled .back-to-top {
+  display: block;
+}
+

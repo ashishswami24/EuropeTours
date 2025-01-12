@@ -14,7 +14,7 @@ function showSlides(n, carouselId) {
   let i;
   let carousel = document.getElementById(carouselId);
   let slides = carousel.getElementsByClassName("package");
-  let dots = carousel.getElementsByClassName("dot");
+  let dots = carousel.parentNode.getElementsByClassName("dot");
   let totalSlides = Math.ceil(slides.length / 3);
 
   // Adjust for mobile view
@@ -54,9 +54,39 @@ function showSlides(n, carouselId) {
     }
   }
   dots[slideIndex - 1].className += " active";
+
+    // Hide or show arrows based on the current slide index 
+    let prevArrow = carousel.querySelector(".prev"); 
+    let nextArrow = carousel.querySelector(".next"); 
+    if (slideIndex === 1) 
+    { 
+        prevArrow.style.display = "none"; // Hide the previous arrow if on the first slide 
+    } else 
+    { 
+        prevArrow.style.display = "block"; // Show the previous arrow 
+    } 
+    if (slideIndex === totalSlides) 
+    { 
+        nextArrow.style.display = "none"; // Hide the next arrow if on the last slide 
+    } else 
+    { 
+        nextArrow.style.display = "block"; // Show the next arrow 
+    }
 }
 
 window.onresize = function () {
   showSlides(slideIndex, "europe-carousel");
   showSlides(slideIndex, "dubai-carousel");
 };
+
+
+  window.addEventListener('scroll', function() {
+      const button = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+          document.body.classList.add('scrolled');
+      } else {
+          document.body.classList.remove('scrolled');
+      }
+  });
+
+
