@@ -373,3 +373,7 @@ body.scrolled .back-to-top {
   display: block;
 }
 
+#about {
+  padding: 20px;
+}
+
