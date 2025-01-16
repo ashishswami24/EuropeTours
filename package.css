@@ -20,6 +20,11 @@ header {
     overflow: hidden;
 }
 
+header div {
+    padding: 0 5px;
+  }
+  
+
 header h1 {
     margin: 0;
     padding: 0;

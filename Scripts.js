@@ -84,8 +84,10 @@ function showSlides(n, carouselId, direction) {
 }
 
 window.onresize = function () {
-  showSlides(slideIndex, "europe-carousel");
-  showSlides(slideIndex, "dubai-carousel");
+  if(window.innerWidth > 768) {
+    showSlides(slideIndex, "europe-carousel");
+    showSlides(slideIndex, "dubai-carousel");
+  }
 };
 
 window.addEventListener("scroll", function () {

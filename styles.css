@@ -53,7 +53,7 @@ header {
   color: #ffa500; /* Light Orange */
 }
 
-header h1 {
+header h1, header h3 {
   margin: 0;
   padding: 0;
 }
