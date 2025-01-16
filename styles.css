@@ -93,80 +93,6 @@ button:hover {
   background-color: #ff8c00; /* Slightly darker orange on hover */
 }
 
-/* Redesigned Contact Form Styles */
-#contact {
-  background-color: #f4f4f4;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 800px; /* Slightly wider for better design */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#contact h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-#contact form {
-  display: flex;
-  flex-direction: column; /* Stack inputs vertically */
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: block;
-  font-size: 16px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 15px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border-color 0.3s ease-in-out;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border-color: #ffa500; /* Light Orange */
-  outline: none;
-}
-
-textarea {
-  resize: vertical;
-  height: 150px;
-  width: 100%;
-}
-
-button[type="submit"] {
-  background-color: #ffa500; /* Light Orange */
-  color: white;
-  border: none;
-  border-radius: 10px; /* Rounded corners */
-  padding: 15px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  font-size: 16px;
-  border: 2px solid #ff8c00; /* Slightly thicker border */
-  align-self: center; /* Center the button */
-  width: 200px; /* Fixed width for button */
-}
-
-button[type="submit"]:hover {
-  background-color: #ff8c00; /* Slightly darker orange on hover */
-}
-
 /* Carousel and Package Styles */
 .carousel {
   position: relative;
@@ -316,6 +242,109 @@ ul li::before {
   top: -12px;
   transform: translateY(50%); /* Center vertically */
 }
+
+/* Compact Contact Form Styles */
+#contact-form {
+  background-color: #f4f4f4;
+  padding: 10px; /* Smaller padding */
+  margin: 20px auto;
+  width: 80%; /* Fit to screen width with 10% padding on each side */
+  max-width: 100%; /* Ensure it doesn't exceed screen width */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+  text-align: center;
+  font-size: 18px; /* Smaller font size */
+  margin-bottom: 10px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap if necessary */
+  justify-content: space-between; /* Evenly space between items */
+  margin-bottom: 10px; /* Reduce space between rows */
+}
+
+.form-group {
+  flex: 1;
+  min-width: 30%; /* Ensure it doesn't get too small */
+  margin: 5px; /* Space between form elements */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 12px; /* Smaller font size */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 8px; /* Reduce padding for compact size */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 12px; /* Smaller font size */
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #ffa500; /* Light Orange */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 60px; /* Smaller height for compact form */
+  width: 97%;
+}
+
+button[type="submit"] {
+  background-color: #ffa500; /* Light Orange */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Smaller padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 12px; /* Smaller font size */
+  border: 2px solid #ff8c00; /* Slightly thicker border */
+  align-self: center; /* Center the button */
+  width: 100px; /* Reduce width for compact button */
+}
+
+button[type="submit"]:hover {
+  background-color: #ff8c00; /* Slightly darker orange on hover */
+}
+
+/* Success and Error Message Styles */
+.success-message,
+.error-message {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
