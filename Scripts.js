@@ -1,7 +1,16 @@
-let slideIndex = 1;
 let isAnimating = false; // Variable to track animation state
-showSlides(slideIndex, "europe-carousel"); // Initialize carousel 1
-showSlides(slideIndex, "dubai-carousel"); // Initialize carousel 2
+let slideIndex = 1;
+document.addEventListener('DOMContentLoaded', function() {
+  if(window.innerWidth > 768) {
+    updateDots('europe-carousel');
+    updateDots('dubai-carousel');
+    showSlides(slideIndex, "europe-carousel"); // Initialize carousel 1
+    showSlides(slideIndex, "dubai-carousel"); // Initialize carousel 2
+  }
+});
+
+
+
 
 function changeSlide(n, carouselId) {
   if (!isAnimating) {
@@ -62,7 +71,10 @@ function showSlides(n, carouselId, direction) {
     }
   }, 20); // Delay to trigger CSS transition
 
-  dots[slideIndex - 1].className += " active";
+  if(dots.length > 0)
+  {
+    dots[slideIndex - 1].className += " active";
+  }
 
   setTimeout(() => {
     isAnimating = false;
@@ -83,12 +95,6 @@ function showSlides(n, carouselId, direction) {
   }
 }
 
-window.onresize = function () {
-  if(window.innerWidth > 768) {
-    showSlides(slideIndex, "europe-carousel");
-    showSlides(slideIndex, "dubai-carousel");
-  }
-};
 
 window.addEventListener("scroll", function () {
   const button = document.querySelector(".back-to-top");
@@ -102,4 +108,28 @@ window.addEventListener("scroll", function () {
 function toggle() {
   const details = document.getElementById("itinerary-details");
   details.style.display = details.style.display === "none" ? "block" : "none";
+}
+
+
+function updateDots(carouselId) 
+{ 
+  const carousel = document.getElementById(carouselId);
+  const slides = carousel.getElementsByClassName('package');
+  const dotsContainer = carousel.nextElementSibling; 
+  // Assuming dots container is next to carousel 
+  dotsContainer.innerHTML = ''; // Clear existing dots 
+
+  // Calculate number of slides \
+  const numSlides = Math.ceil(slides.length / 3); 
+  for (let i = 0; i < numSlides; i++) 
+  { const dot = document.createElement('span'); 
+    dot.classList.add('dot'); 
+    dot.setAttribute('onclick', `currentSlide(${i + 1}, '${carouselId}')`); 
+    dotsContainer.appendChild(dot);
+   } 
+  // Set the first dot as active by default 
+  if (dotsContainer.firstChild) 
+  { dotsContainer.firstChild.classList.add('active'); 
+
+  } 
 }

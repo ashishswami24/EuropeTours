@@ -376,6 +376,16 @@ button[type="submit"]:hover {
   .dots {
 	display:none;
   }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 90%;
+  }
+
+  input[type="email"],
+  textarea {
+    width: 95%;
+  }
 }
 
 /* Back to Top Button */
